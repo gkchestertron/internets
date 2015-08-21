@@ -1,22 +1,22 @@
 #Introduction
 The internet is a wonderful thing. There various protocols and architectures that make it work, and we don't really have time to look at the details of most of them, but we will be focusing on the aspects related to developing web applications. You don't need to be able to write a web server, but you will need to know how they work. You don't need to know exactly how switches, proxies and routers help arbitrary computers connect to other arbitrary computers all over the world, but you will need to know how we format, send and receive requests through this vast system.
 
-#HTTP
+##HTTP
 HTTP is the language of the public internet. It's actually relatively primitive, but it  works well. And most importantly it allows us to communicate easily across many platforms (think about it - outside the internet, just transferring simple files between macs and pcs (or even just pcs with different versions of windows) was a long, frustrating exercize in futility not so long ago). But the internet was intentially architected to allow many different kinds of systems to talk to eachother. I'll let wikipedia tell you the details: [https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol](http)
 
-#Sockets
+##Sockets
 Sockets are one of the fundamental building block of networks and the internet. They are how computers make and maintain connections with eachother. See the following examples and take a look at our own examples in the socket\_examples folder. A web server is essentially just a program that has a socket listening for connections and code to handle responding to requests sent on those connections.
 [http://www.binarytides.com/python-socket-server-code-example/](simple socket server) - network chess game
 [http://www.linuxjournal.com/content/tech-tip-really-simple-http-server-python](http server)
 
-#HTML
+##HTML
 HyperText Markup Language is the language for declaring elements and text to be shown on a web page. It has no logic, just tags with properties and text. See w3schools tutorial to learn more: http://www.w3schools.com/html/. Pages built with just html are pretty boring (see http://motherfuckingwebsite.com/). Pages can be styled with **CSS** and manipulated (therefore making them interactive) with **JavaScript**. Pages can be styled with **CSS** and manipulated (therefore making them interactive) with **JavaScript**.
 
-#PHP
+##PHP
 PHP has been around a long time. It is a **scripting language** like python, ruby and others made for creating, controlling, and injecting data into html pages. While it is no longer conventional to directly mix php and html together, that is what it was originally written for. Take a look at http://www.w3schools.com/php/. Many sites used to be written this way - and some still are - but it gets messy very quickly. **Frameworks** like **Flask** separate the html templates and data, using a scripting language to programmatically bring them together in a much more organized fashion.
 
-#CSS
+##CSS
 **Cascading Style Sheets** were invented because styling html in-line is really messy and a giant pain in the neck. Html tags can be given style properties to change many things about how they are dislayed (like color, size, border, padding, margin, etc...), but doing so one tag at a time is tedious. CSS allows us to define styles that will be used by many tags, which we can give class properties (and others) to associate them with the styles we define.
 
-#JavaScript
+##JavaScript
 JavaScript is a mess of a language. It has its roots in the C family of languages. It has many APIs for doing many different things (like manipulating the html on a web page to getting access to a user's microphone or camera - or even gps). Most of these things were not thought of when it was first written, so it is the result of years of piling on more and more features. Moreover there is no one person or entity responsible for writing and maintaining the language. There is a committee that proposes specifications, and then browser vendors decide how to implement these specifications. Which is why browsers never all behave the same way (basically why nothing works right in IE). It is however the defacto language of the internet - you don't have another choice when it comes to front-end (the code that runs on the user's computer), so we are going to have to learn it anyway. Many people would like to see it replaced, but that is something that would take a long time and monumental, coordinated global effort. So don't hold your breath. The Frankenstein that is JavaScript is here to stay for a while.
