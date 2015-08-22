@@ -1,2 +1,3 @@
 flask/static_example/venv/*
 *.pyc
+*.swp
