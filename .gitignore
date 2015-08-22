@@ -1,1 +1,2 @@
 flask/static_example/venv/*
+*.pyc
