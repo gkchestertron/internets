@@ -1,0 +1,2 @@
+#Forms
+Forms are how most data gets sent from a user to the server. They send a request just like when we navigate to a web page, but with at least one important difference: the **verb**. See http://www.restapitutorial.com/lessons/httpmethods.html. When we first request the page we send a **GET** request. A form typically sends a **POST** request. We'll talk more about this when we get to building APIs, but a **POST** request sends data to the server, and the server will usually do something entirely different based on what verb is in the **headers** for the request.
