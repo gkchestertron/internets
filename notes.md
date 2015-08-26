@@ -4,5 +4,4 @@
 
 
 Activating the virtual env:" . venv/bin/activate" inside terminal to activate,
-
                       type: "deactivate" to shut off
