@@ -3,5 +3,6 @@
 [https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol](http)
 
 
-Activating the virtual env:" . venv/bin/activate" inside terminal to activate
+Activating the virtual env:" . venv/bin/activate" inside terminal to activate,
+
                       type: "deactivate" to shut off
