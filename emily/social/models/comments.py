@@ -1,5 +1,6 @@
+from flask import Flask, session, g
 from db import db
-from datetime import datetime
+
 
 class Comment(db.Model):
 	__tablename__ = 'comments'

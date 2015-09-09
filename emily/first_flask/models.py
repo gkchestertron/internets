@@ -43,7 +43,7 @@ class Post(db.Model):
 	title = db.Column(db.String(255))
 	body = db.Column(db.String(1000))
 	comments = db.relationship('Comment', backref='post', cascade='all, delete, delete-orphan')
-	timestamp = datetime.datetime.now
+	timestamp = datetime.datetime.now()
 
 class Comment(db.Model):
 	__tablename__ = 'comments'

@@ -73,7 +73,7 @@ def login():
 			flash('You were successfully logged in!')
 			return redirect('/')
 		else:
-			flash ('log in failed')
+			flash('log in failed')
 			return redirect ('/login')
 
 @app.route('/sign_up', methods=['POST', 'GET'])
