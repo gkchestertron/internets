@@ -1,7 +1,8 @@
 flask/static_example/venv/*
+emily/first_flask/venv/*
+emily/blog/virt/*
+emily/blog/config.py
 *.pyc
 tyler/first_flask/venv/*
-*.swp
 blog/venv/*
 blog/config.py
-
