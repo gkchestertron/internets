@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>BlogSpace</h1>
+{% if current_user %}
+You are logged in as: {{username}}
+{% else %}
+<p>Please login...</p>
+<form action='/login' method='GET'>
+<button type='submit' value='go to login'>Login</button>
+</form>
+{% endif %}
+{% for post in posts %}
+	<h3>{{post.title}}</h3>
+	<p>{{post.body}}</p>
+	{% if post.user %}
+		<p>{{post.user.username}}</p>
+	{% endif %}
+	{% if current_user %}
+		<form action="/comments" method="POST">
+	<input type="text" name="body" />
+	<input type="hidden" name="post_id" value="{{post.id}}" />
+	<button type="submit">Leave Comment</button>
+</form>
+	{% endif %}
+	{% for comment in post.comments %}
+		{{comment.body}}
+	<hr />
+{% endfor %} 
+{% endfor %}
+{% endblock %}
+
+

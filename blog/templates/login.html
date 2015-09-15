@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+{% if current_user %}}
+You are logged in as {{username}}
+{% else %}
+<form method='POST' action='/login'>
+	<p><input name='username' type='text' placeholder='username'/></p>
+	<p><input name='password' type='password' placeholder='password'/></p>
+	<button type='submit'>Login</button>
+</form>
+{% endif %}
+{% endblock %}	

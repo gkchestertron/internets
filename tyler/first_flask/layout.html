@@ -1,0 +1,9 @@
+{% with messages = get_flashed_messages() %}
+{% for message in messages %}
+<p>{{message}}</p>
+{% endfor %}
+{% endwith %}
+<form method="POST" action="/logout">
+	<button type="submit">logout</button>
+</form>	
+{% block body %}{% endblock %}

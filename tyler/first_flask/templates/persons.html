@@ -1,0 +1,9 @@
+<h1>Persons</h1>
+{% for person in persons %}
+	<p>{{person.name}}</p>
+{% endfor %}
+
+<form action="/persons" method="POST">
+	<input type="text" name ="name" />
+	<button type="submit">Make Person</button> 
+	</form>

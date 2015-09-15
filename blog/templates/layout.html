@@ -1,0 +1,13 @@
+{% with messages = get_flashed_messages() %}
+	{% for message in messages %}
+		<p>{{message}}</p>
+	{% endfor %}
+{% endwith %}
+{% block body %}{% endblock %}
+{% if g.current_user %}
+<form method='POST'	action='/logout'>
+		<button type='submit'>Logout</button>
+</form>
+{% else %}
+<a href="/signup">Signup</a>
+{% endif %}

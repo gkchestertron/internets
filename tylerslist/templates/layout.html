@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<h1>Tyler's List</h1>
+		<ul>
+  			<li><a href="/">Home</a></li>
+ 			<li><a href="/create">Create Post</a></li>
+  			<li><a href="/categories">Categories</a></li>
+		</ul>
+		<form action="/search" method="POST">
+			<input type="text" name="search" />
+			<button type="submit">Search</button>
+		</form>
+		{% block body %}{% endblock %}
+	</body>
+</html>

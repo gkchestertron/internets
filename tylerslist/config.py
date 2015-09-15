@@ -1,0 +1,10 @@
+DEBUG = True
+SECRET_KEY = 'secret stuff'
+SQLALCHEMY_DATABASE_URI = 'mysql://tylers_list:starwars@localhost:3306/tylerslist'
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_PORT = 587
+MAIL_USE_TLS = True
+MAIL_USE_SSL = False
+MAIL_USERNAME = 'tprobstcoding@gmail.com' 
+MAIL_PASSWORD = 'Tylerprobst1'
+MAIL_DEFAULT_SENDER = 'tprobstcoding@gmail.com'
