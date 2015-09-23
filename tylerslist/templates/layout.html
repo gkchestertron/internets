@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
-	<head></head>
-	<body>
-		<h1>Tyler's List</h1>
-		<ul>
-  			<li><a href="/">Home</a></li>
- 			<li><a href="/create">Create Post</a></li>
-  			<li><a href="/categories">Categories</a></li>
-		</ul>
-		<form action="/search" method="POST">
-			<input type="text" name="search" />
-			<button type="submit">Search</button>
-		</form>
-		{% block body %}{% endblock %}
-	</body>
+  <head>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+	<div class="nav">
+		<body>	
+			{% with messages = get_flashed_messages() %}
+			{% for message in messages %}
+				<p>{{message}}</p>
+			{% endfor %}
+			<h1><a href="/">Tyler's List</a></h1>
+			<ul>
+	  			<li><a href="/categories">Categories</a></li>
+	  			<li><a href="/posts">Posts</a></li>
+	  			<li><a href="/create">Create Post</a></li>
+			</ul>
+			<form action="/search" method="POST">
+				<input type="text" name="search" />
+				<button type="submit">Search</button>
+			</form>
+			{% block body %}{% endblock %}
+			{% endwith %}
+		</body>
+	</div>
 </html>

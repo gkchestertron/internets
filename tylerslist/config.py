@@ -8,3 +8,4 @@ MAIL_USE_SSL = False
 MAIL_USERNAME = 'tprobstcoding@gmail.com' 
 MAIL_PASSWORD = 'Tylerprobst1'
 MAIL_DEFAULT_SENDER = 'tprobstcoding@gmail.com'
+UPLOAD_FOLDER = '/Users/TylerProbst/north-bay/internets/tylerslist/uploads'

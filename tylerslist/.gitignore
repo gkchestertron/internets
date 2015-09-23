@@ -1,0 +1,10 @@
+*.pyc
+venv/*
+DS_STORE
+flask/static_example/venv/*
+emily/first_flask/venv/*
+emily/blog/virt/*
+emily/blog/config.py
+tyler/first_flask/venv/*
+blog/venv/*
+blog/config.py

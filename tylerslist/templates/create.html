@@ -1,5 +1,5 @@
 <h1>Create Post</h1>
-<form action="/create" method="POST">
+<form action="/create" method="POST" enctype="multipart/form-data">
 Email address: <input name="email" type="text" />	
 <p>Select category: <select name ="category_id">
     				  {% for category in categories %}
@@ -8,9 +8,11 @@ Email address: <input name="email" type="text" />
     				  </select></p>
 <textarea name="title" placeholder="Please enter the title of your post here." rows="1" cols="50" autofocus=autofocus>
 </textarea>
+<textarea name="price" placeholder="Enter Price" rows ="1" cols="18"></textarea>
 <br><br>
 <textarea name="body" placeholder="Please enter the body of your post here." rows="10" cols="150">
 </textarea>
-<button type="submit">Submit Post</button>
+<input name="file" type="file">
+<p><button type="submit">Submit Post</button><p/>
 </form>
 
